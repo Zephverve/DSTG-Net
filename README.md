@@ -1,11 +1,3 @@
-# [Your Paper Title]
-
-> Exploiting Spatio-Temporal Dynamics with a Dual-Stream GCN-Transformer Network for Human Motion Prediction
-
-## Abstract
-
-Accurate human motion prediction is fundamental to applications like intelligent surveillance and human-robot interaction. However, the inherent complexity and stochasticity of human motion present significant challenges. Most existing approaches process spatial and temporal information using two distinct stream separately, resulting in potential semantic misalignment during fusion and limited feature complementarity between streams. To address these limitations, we propose a Dual-Stream GCN-Transformer Network (DSTG-Net) for accurate and robust human motion prediction. DSTG-Net synergistically exploits local and global spatiotemporal patterns: a spatiotemporal Graph Convolutional Network (GCN) stream is employed to extract local temporal patterns and local spatial joint relations, while a spatiotemporal Transformer stream is designed to model global temporal dependencies and long-range spatial interactions among non-adjacent joints. Unlike prior methods that independently extract temporal and spatial information, our method learns features on a unified spatiotemporal scale. This unified learning paradigm effectively mitigates the feature semantic misalignment that arises in separated-modeling approaches. Furthermore, we incorporate a decorrelation loss to promote feature diversity, guiding the model to learn complementary representations. In addition, an adaptive fusion strategy is designed to enable the model to balance local and global information for optimal feature integration by dynamically assigning feature weights.  Extensive experiments show that the proposed model achieves competitive results on three benchmark datasets. Specifically, on Human3.6M, the average per-joint position error (avg-MPJPE) is reduced by 4.37% for short-term prediction and 1.09% for long-term prediction; on CMU-MoCap, the respective reductions are 5.21% and 3.83%; and on 3DPW,  the reductions reach 22.22% and 15.10%. The code is available at: https://github.com/Zephverve/DSTG-Net
-
 ## Network Architecture
 
 ![DSTG-Net Architecture](image/arc.PNG)
