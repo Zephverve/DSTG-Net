@@ -309,11 +309,6 @@ def run_model(net_pred, optimizer=None, is_train=0, data_loader=None, epo=1, opt
             loss_p3d_4_v = torch.mean(torch.norm(v_p_4 - v_t_4, dim=3))
 
             loss_all = 0.5*(loss_p3d_4 )+0.5*loss_p3d_4_v+ 0.00005 * decorrelation_loss
-
-            if is_train == 0:
-                decorrelation_losses.append(decorrelation_loss.item())
-                if i % 1000 == 0:
-                    print(f"Batch {i}/{len(data_loader)}, decorrelation_loss={(decorrelation_loss.item())}")
             optimizer.zero_grad()
             scaler.scale(loss_all).backward()
             scaler.step(optimizer)
