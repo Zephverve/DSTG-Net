@@ -1,6 +1,3 @@
-## Network Architecture
-
-![DSTG-Net Architecture](image/arc.PNG)
 
 ## Requirements
 
@@ -133,4 +130,4 @@ Our pre-training parameters cannot be uploaded due to size limitations.
 
 ## Acknowledgments
 
-This codebase is built on top of **PGBIG**, with adaptations for the current DSTG-Net implementation.
+This codebase is built on top of **PGBIG**.
